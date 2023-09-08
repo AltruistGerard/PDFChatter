@@ -9,7 +9,7 @@ from langchain.callbacks import get_openai_callback
 
 
 def main():
-    OPENAI_API_KEY= st.secrets[OPENAI_API_KEY]
+    OPENAI_API_KEY= st.secrets["OPENAI_API_KEY"]
     st.set_page_config(page_title="Altruistic Demo")
     st.header("PDF query tool 🔎📄")
     
