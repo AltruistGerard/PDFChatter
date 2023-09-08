@@ -1,4 +1,3 @@
-from dotenv import load_dotenv
 import streamlit as st
 from PyPDF2 import PdfReader
 from langchain.text_splitter import CharacterTextSplitter
@@ -10,7 +9,7 @@ from langchain.callbacks import get_openai_callback
 
 
 def main():
-    load_dotenv()
+    OPENAI_API_KEY= st.secrets[OPENAI_API_KEY]
     st.set_page_config(page_title="Altruistic Demo")
     st.header("PDF query tool 🔎📄")
     
